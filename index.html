@@ -19,7 +19,7 @@
 </head>
 <body><main>
 <h1>Privacy Policy — Don’t Dig Too Deep</h1>
-<p><strong>Effective date:</strong> October 19, 2026</p>
+<p><strong>Effective date:</strong> October 23, 2026</p>
 <p>This Privacy Policy explains what information the mobile game <strong>Don’t Dig Too Deep — Idle Dig &amp; Museum Tycoon</strong> (the “Game”) collects, how it is used and shared, and the choices you have. The Game is developed by <strong>Oleh Shevchenko</strong> (“we”, “us”).</p>
 <p>If you have any questions, contact us at <strong>olejhashevchenko96@gmail.com</strong>.</p>
 <hr>
@@ -30,6 +30,8 @@
 <li>The Game is free and supported by <strong>optional rewarded video ads</strong> from Google AdMob. Ads may use your device’s advertising identifier <strong>only if you allow it</strong> (Apple’s App Tracking Transparency prompt and, in the EEA, UK and Switzerland, the consent message).</li>
 <li>The <strong>invite-a-friend</strong> feature uses Google Firebase with a random anonymous ID to count invited friends and grant rewards.</li>
 <li>If the Game crashes, an anonymous <strong>crash report</strong> is sent through Google Firebase Crashlytics so we can fix the problem.</li>
+<li>The <strong>leaderboard</strong> shows other players your nickname (or a generated name), your deepest run and the dig site. You can report or hide other players' names.</li>
+<li>We use <strong>Google Firebase Analytics</strong> to understand how the Game is played (for example how deep runs go and which optional videos are watched). It is not used for advertising.</li>
 <li>We do not sell your personal information.</li>
 </ul>
 <h2>2. Information stored on your device</h2>
@@ -64,15 +66,31 @@
 </ul>
 <p>Crash reports do not contain your game progress or any personal information. We use them only to find and fix bugs. Crashlytics keeps crash reports for 90 days.</p>
 <p>Firebase Crashlytics data processing: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
-<h3>3.4 Time check</h3>
+<h3>3.4 Usage analytics — Google Firebase Analytics</h3>
+<p>To see how the Game is played and improve it, the Game sends usage events to <strong>Firebase Analytics</strong>, for example: a run ended (depth, blocks broken, best combo, dig site), an upgrade was bought, a dig site was unlocked, a daily goal was claimed, an optional video was offered, watched or skipped. Firebase Analytics also collects:</p>
+<ul>
+<li>a random <strong>app instance ID</strong> created by Firebase (not your name, email, Apple ID or advertising identifier);</li>
+<li><strong>device and app information:</strong> device model, operating system version, language, app version;</li>
+<li>approximate (country/city-level) location derived from your IP address, and session information (first open, session length).</li>
+</ul>
+<p>Analytics data is used only for statistics about the Game. In the Game, advertising storage, ad personalization and ad user data are switched off for Analytics, so it is not used to show or personalize ads and it is not combined with ad data. Google keeps Analytics data for 14 months.</p>
+<p>Firebase Analytics data collection: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h3>3.5 Leaderboard — Google Firebase</h3>
+<p>When a run beats your record, the Game saves to <strong>Cloud Firestore</strong>, under your random anonymous Firebase ID (see 3.2):</p>
+<ul>
+<li>your <strong>nickname</strong> — the one you choose, or a name the Game generates (for example “Brave Whiskers #42”);</li>
+<li>your <strong>deepest run</strong> in metres and the dig site where you reached it, and the time of the update.</li>
+</ul>
+<p><strong>Other players can see your nickname, deepest run and dig site</strong> on the leaderboard. Please don't use your real name or personal information as a nickname. Nicknames with offensive words are rejected. Any player can report a nickname or hide a player; a nickname reported by several players is replaced with a generated name. Reports store only the reporting player's anonymous ID and the time.</p>
+<h3>3.6 Time check</h3>
 <p>To prevent cheating by changing the device clock (for example to collect offline rewards early), the Game occasionally requests the current time from a Google web server (<code>google.com</code>). No game data or identifiers are sent; like any web request, the server receives your IP address and basic request information.</p>
 <h2>4. Information we do not collect</h2>
 <p>We do not collect your name, email address, phone number, postal address, contacts, photos, microphone or camera data, precise location, health data, or payment information. The Game currently has no in-app purchases.</p>
 <h2>5. Legal bases (EEA, UK and Switzerland)</h2>
 <ul>
 <li><strong>Consent</strong> — personalized advertising and the use of your advertising identifier. You can withdraw consent at any time in Settings → Privacy options and in iOS Settings → Privacy &amp; Security → Tracking.</li>
-<li><strong>Legitimate interests</strong> — showing non-personalized ads that fund the free Game, ad measurement, fraud prevention, preventing cheating, crash reporting to fix bugs, and keeping the service secure.</li>
-<li><strong>Performance of a contract</strong> — providing the invite-a-friend feature you choose to use.</li>
+<li><strong>Legitimate interests</strong> — showing non-personalized ads that fund the free Game, ad measurement, fraud prevention, preventing cheating, crash reporting to fix bugs, usage analytics to improve the Game, keeping the leaderboard free of abuse, and keeping the service secure.</li>
+<li><strong>Performance of a contract</strong> — providing the invite-a-friend feature and the leaderboard.</li>
 </ul>
 <h2>6. Your choices</h2>
 <ul>
@@ -80,13 +98,17 @@
 <li><strong>Ad consent:</strong> change your choice in the Game: Settings → Privacy options.</li>
 <li><strong>Ads in general:</strong> ads only appear when you tap a button to watch one; you never have to watch ads to play.</li>
 <li><strong>Local data:</strong> deleting the Game removes your progress from the device.</li>
-<li><strong>Invite data:</strong> to delete the invite-program data linked to your anonymous ID, email us at olejhashevchenko96@gmail.com with your invite code (shown on the invite screen). We will delete it within 30 days.</li>
+<li><strong>Invite and leaderboard data:</strong> to delete the invite-program and leaderboard data linked to your anonymous ID, email us at olejhashevchenko96@gmail.com with your invite code (shown on the invite screen) or your leaderboard nickname. We will delete it within 30 days.</li>
+<li><strong>Leaderboard name:</strong> change your nickname any time on the leaderboard screen.</li>
+<li><strong>Other players:</strong> long-press a name on the leaderboard to report it or hide that player.</li>
 </ul>
 <h2>7. Data retention</h2>
 <ul>
 <li>Game progress stays on your device until you delete the Game.</li>
 <li>Invite-program data is kept while the invite program operates, or until you ask us to delete it.</li>
 <li>Crash reports are kept by Firebase Crashlytics for 90 days.</li>
+<li>Leaderboard entries are kept while the leaderboard operates, or until you ask us to delete them.</li>
+<li>Firebase Analytics data is kept for 14 months.</li>
 <li>Other data collected by Google is kept according to Google’s retention policies.</li>
 </ul>
 <h2>8. Children</h2>
@@ -99,7 +121,7 @@
 <p>Depending on where you live (for example under the GDPR, UK GDPR or California law), you may have the right to access, correct, delete or receive a copy of your personal information, to object to or restrict certain processing, and to withdraw consent. Because we do not ask who you are, we may need your invite code to find data linked to you. To exercise these rights, contact us at olejhashevchenko96@gmail.com. You may also complain to your local data protection authority.</p>
 <p><strong>California residents:</strong> we do not sell personal information for money. Use of your advertising identifier for personalized ads may be considered “sharing” under California law; you can opt out by declining tracking in the App Tracking Transparency prompt or in iOS Settings.</p>
 <h2>12. Changes to this policy</h2>
-<p>We may update this Privacy Policy, for example when we add new features (such as analytics or in-app purchases). We will post the new version at this address and change the effective date above. Significant changes will also be announced in the Game.</p>
+<p>We may update this Privacy Policy, for example when we add new features (such as in-app purchases). We will post the new version at this address and change the effective date above. Significant changes will also be announced in the Game.</p>
 <h2>13. Contact</h2>
 <p><strong>Oleh Shevchenko</strong> Email: <strong>olejhashevchenko96@gmail.com</strong></p>
 </main></body>
